@@ -1,0 +1,50 @@
+# Fixed paper architecture.
+name: faisonic_mmd_500_paper
+features:
+  muq: {layer: 6, dimension: 1024}
+  musicfm: {layer: 7, dimension: 1024}
+  chunk_seconds: 30
+  frame_rate_hz: 25
+shared:
+  input_dimension: 2048
+  hidden_dimension: 256
+  normalization: frame_rmsnorm_gamma_only_fp32
+  convolution_blocks: 2
+  kernel_size: 3
+  residual_scale_initial: 0.1
+  dropout: 0.1
+phrase:
+  encoder: tcn
+  dilations: [1, 4, 16, 64]
+  kernel_size: 5
+  output_dimension: 1
+beat:
+  encoder: tcn
+  dilations: [1, 2, 8, 32]
+  kernel_size: 5
+  tactus_output_dimension: 1
+  downbeat_output_dimension: 1
+  enhanced_tactus: sum_of_tactus_and_downbeat_logits
+chord:
+  encoder: conformer
+  downsample_stride: 4
+  layers: 2
+  attention_heads: 4
+  feed_forward_dimension: 1024
+  convolution_kernel_size: 15
+  root_classes: 12
+  quality_classes: 16
+section:
+  encoder: dina
+  downsample_stride: 8
+  dilations: [1, 4, 16, 64]
+  attention_heads: 4
+  kernel_size: 5
+  feed_forward_dimension: 1024
+  function_classes: 9
+  boundary_head: context_comparison
+  context_windows_native: [4, 16, 32]
+  boundary_output_dimension: 1
+private_branches:
+  hidden_dimension: 256
+  dropout: 0.1
