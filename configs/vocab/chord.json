@@ -1,0 +1,124 @@
+{
+  "version": "1.0.0",
+  "source": "FaiSonic MMD chord vocabulary",
+  "num_quality": 16,
+  "no_chord_idx": 0,
+  "unknown_chord_idx": 15,
+  "quality_label2idx": {
+    "N": 0,
+    "major": 1,
+    "minor": 2,
+    "diminished": 3,
+    "augmented": 4,
+    "major7": 5,
+    "minor7": 6,
+    "dominant7": 7,
+    "half-dim7": 8,
+    "dim7": 9,
+    "major6": 10,
+    "minor6": 11,
+    "sus2": 12,
+    "sus4": 13,
+    "minor-major7": 14,
+    "X": 15,
+    "add9": 1,
+    "add11": 1,
+    "add13": 1,
+    "major9": 5,
+    "minor9": 6,
+    "dominant9": 7,
+    "11": 7,
+    "13": 7,
+    "altered": 7,
+    "power": 15,
+    "minor-add9": 2,
+    "minor-add11": 2,
+    "minor-add13": 2,
+    "dominant7sus4": 15,
+    "dominant7sus2": 15,
+    "dominant9sus4": 15,
+    "minor11": 6,
+    "major11": 5,
+    "major69": 10,
+    "major13": 5,
+    "minor13": 6
+  },
+  "quality_idx2label": {
+    "0": "N",
+    "1": "major",
+    "2": "minor",
+    "3": "diminished",
+    "4": "augmented",
+    "5": "major7",
+    "6": "minor7",
+    "7": "dominant7",
+    "8": "half-dim7",
+    "9": "dim7",
+    "10": "major6",
+    "11": "minor6",
+    "12": "sus2",
+    "13": "sus4",
+    "14": "minor-major7",
+    "15": "X"
+  },
+  "alias2standard": {
+    "maj7": "major7",
+    "M7": "major7",
+    "min7": "minor7",
+    "dim": "diminished",
+    "aug": "augmented",
+    "diminished7": "dim7",
+    "m7b5": "half-dim7",
+    "half-diminished7": "half-dim7",
+    "maj9": "major7",
+    "M9": "major7",
+    "min9": "minor7",
+    "M11": "major7",
+    "maj11": "major7",
+    "min11": "minor7",
+    "sus4-7": "X",
+    "major-(add9)": "major",
+    "minor-(add9)": "minor"
+  },
+  "unmapped_aliases": {
+    "majb9": {
+      "fallback": "dominant7",
+      "fallback_idx": 7
+    },
+    "maj7-sus2": {
+      "fallback": "X",
+      "fallback_idx": 15
+    },
+    "maj7-(#5)": {
+      "fallback": "augmented",
+      "fallback_idx": 4
+    },
+    "maj7-(b5)": {
+      "fallback": "half-dim7",
+      "fallback_idx": 8
+    },
+    "major-(add4)": {
+      "fallback": "major",
+      "fallback_idx": 1
+    }
+  },
+  "num_root": 12,
+  "root_info": {
+    "description": "Pitch classes 0-11; N and X frames do not supervise the root head.",
+    "num_root": 12,
+    "pitch_class_map": {
+      "0": "C",
+      "1": "C#/Db",
+      "2": "D",
+      "3": "D#/Eb",
+      "4": "E",
+      "5": "F",
+      "6": "F#/Gb",
+      "7": "G",
+      "8": "G#/Ab",
+      "9": "A",
+      "10": "A#/Bb",
+      "11": "B"
+    }
+  }
+}
