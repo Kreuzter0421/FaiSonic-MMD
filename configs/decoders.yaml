@@ -1,0 +1,31 @@
+# Decoder initialization settings.
+phrase:
+  candidate_distance_frames: 12
+  candidate_probability_floor: 0.05
+  event_min_distance_frames: 50
+  frame_rate_hz: 25.0
+  template_only: true
+  requires_validation_fit: true
+section_boundary:
+  native_stride: 8
+  min_distance_steps: 35
+  template_only: true
+  requires_validation_fit: true
+section:
+  section_native_stride: 8
+  template_only: true
+  requires_validation_fit: true
+beat:
+  candidate_min_distance_frames: 2
+  candidate_probability_floor: 0.02
+  heads:
+    tactus:
+      min_peak_distance_frames: 4
+    downbeat:
+      min_peak_distance_frames: 25
+  template_only: true
+  requires_validation_fit: true
+chord:
+  native_stride: 4
+  template_only: true
+  requires_validation_fit: true
