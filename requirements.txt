@@ -1,0 +1,12 @@
+# Python 3.10+; install matching PyTorch and torchaudio versions.
+torch
+torchaudio
+numpy
+scipy
+scikit-learn
+PyYAML
+mir_eval==0.8.2
+soundfile
+librosa
+muq
+# Install MusicFM separately.
