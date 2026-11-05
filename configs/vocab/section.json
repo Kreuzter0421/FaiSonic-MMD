@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "source": "FaiSonic MMD section vocabulary",
+  "num_classes": 9,
+  "background_idx": 0,
+  "label2idx": {
+    "<background>": 0,
+    "intro": 1,
+    "verse": 2,
+    "pre-chorus": 3,
+    "chorus": 4,
+    "bridge": 5,
+    "post-chorus": 6,
+    "interlude": 7,
+    "outro": 8
+  },
+  "idx2label": {
+    "0": "<background>",
+    "1": "intro",
+    "2": "verse",
+    "3": "pre-chorus",
+    "4": "chorus",
+    "5": "bridge",
+    "6": "post-chorus",
+    "7": "interlude",
+    "8": "outro"
+  },
+  "alias2standard": {}
+}
