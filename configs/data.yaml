@@ -1,0 +1,21 @@
+frame_rate_hz: 25.0
+downsample_n: 1
+gaussian_sigma_ms: 70.0
+beat_precision: beat
+beat_label_mode: hard
+sample_dir: datasets/FaiSonicMMD
+vocab:
+  section: configs/vocab/section.json
+  chord: configs/vocab/chord.json
+split:
+  seed: 42
+mert:
+  cache_dir: datasets/FaiSonicMMD/cache/features_muq_layer6_chunk30s
+  secondary_cache_dir: datasets/FaiSonicMMD/cache/features_musicfm_layer7_chunk30s
+  feature_index_path: null
+  primary_backbone: muq
+  primary_layer: 6
+  secondary_backbone: musicfm
+  secondary_layer: 7
+label_cache:
+  cache_dir: datasets/FaiSonicMMD/cache/labels
