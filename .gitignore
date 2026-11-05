@@ -1,0 +1,25 @@
+# Data, model resources, and generated outputs are distributed separately.
+/datasets/
+/FaiSonicMMD_*.zip*
+/model_checkpoints/
+/cache/
+/logs/
+/results/
+/outputs/
+/assets/
+/.venv/
+__pycache__/
+*.py[cod]
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.npy
+*.npz
+*.wav
+*.mp3
+*.flac
+.env
+*.env
+.DS_Store
+.ruff_cache/
