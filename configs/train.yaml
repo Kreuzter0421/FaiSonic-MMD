@@ -1,0 +1,45 @@
+model_config: model.yaml
+data_config: data.yaml
+lr: 0.0003
+weight_decay: 0.01
+warmup_steps: 0
+cosine_total_steps: 55500
+parameter_groups:
+  groups:
+    mert_interface:
+      lr: 0.0003
+      weight_decay: 0.01
+    shared_backbone:
+      lr: 0.0003
+      weight_decay: 0.01
+    phrase:
+      lr: 0.0003
+      weight_decay: 0.01
+    beat:
+      lr: 0.0003
+      weight_decay: 0.01
+    chord_encoder:
+      lr: 0.0003
+      weight_decay: 0.01
+    chord_heads:
+      lr: 0.0003
+      weight_decay: 0.01
+    section:
+      lr: 0.0003
+      weight_decay: 0.01
+  clip:
+    enabled: false
+    global_threshold: 1.0
+batch_size: 4
+epochs: 12
+save_every: 1
+log_every_batches: 10
+split_json: datasets/FaiSonicMMD/split.json
+log_dir: logs/paper
+checkpoint_dir: model_checkpoints/paper
+shift_tolerant:
+  tolerance: 1
+num_workers: 4
+task_randomness:
+  enabled: true
+run_id: faisonic_mmd_paper_seed42
