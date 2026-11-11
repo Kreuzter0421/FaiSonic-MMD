@@ -2,6 +2,8 @@
 
 English | [中文](README_zh.md)
 
+[Paper (arXiv:2611.13503)](https://arxiv.org/abs/2611.13503) · [PDF](https://arxiv.org/pdf/2611.13503) · [Dataset on Hugging Face](https://huggingface.co/datasets/FaiSonic/FaiSonic-MMD)
+
 Run the following commands from the repository root.
 
 ## 1. Set up the environment
