@@ -4,6 +4,8 @@ English | [中文](README_zh.md)
 
 [Paper (arXiv:2611.13503)](https://arxiv.org/abs/2611.13503) · [PDF](https://arxiv.org/pdf/2611.13503) · [Dataset on Hugging Face](https://huggingface.co/datasets/FaiSonic/FaiSonic-MMD)
 
+FaiSonic MMD contains 500 popular songs with expert annotations for phrases, sections, chords, and rhythm. The four annotation types share a timeline for each recording and are independently reviewed. This repository provides a multitask baseline for joint training and evaluation on these annotations.
+
 Run the following commands from the repository root.
 
 ## 1. Set up the environment
@@ -69,4 +71,16 @@ python scripts/preprocess.py --help
 python scripts/train.py --help
 python scripts/infer.py --help
 python scripts/evaluate.py --help
+```
+
+## Citation
+
+```bibtex
+@article{zhang2026faisonicmmd,
+  title = {{FaiSonic MMD}: A Popular Music Dataset with Temporally Aligned Multidimensional Annotations for Multitask Music Analysis},
+  author = {Zhang, Tieyao and Liu, Yuke and Yu, Jiaxing and Wu, Xinda and Chen, Genfang},
+  journal = {arXiv preprint arXiv:2611.13503},
+  year = {2026},
+  doi = {10.48550/arXiv.2611.13503}
+}
 ```
