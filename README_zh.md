@@ -4,6 +4,8 @@
 
 [论文（arXiv:2611.13503）](https://arxiv.org/abs/2611.13503) · [PDF](https://arxiv.org/pdf/2611.13503) · [Hugging Face 数据集](https://huggingface.co/datasets/FaiSonic/FaiSonic-MMD)
 
+FaiSonic MMD 收录了 500 首流行歌曲，提供由专家标注并独立复核的乐句、段落、和弦和节奏标签。四类标注共用同一录音时间轴。本仓库提供使用这些标注进行联合训练与评估的多任务基线。
+
 以下命令均在仓库根目录运行。
 
 ## 1. 准备环境
@@ -69,4 +71,16 @@ python scripts/preprocess.py --help
 python scripts/train.py --help
 python scripts/infer.py --help
 python scripts/evaluate.py --help
+```
+
+## 引用
+
+```bibtex
+@article{zhang2026faisonicmmd,
+  title = {{FaiSonic MMD}: A Popular Music Dataset with Temporally Aligned Multidimensional Annotations for Multitask Music Analysis},
+  author = {Zhang, Tieyao and Liu, Yuke and Yu, Jiaxing and Wu, Xinda and Chen, Genfang},
+  journal = {arXiv preprint arXiv:2611.13503},
+  year = {2026},
+  doi = {10.48550/arXiv.2611.13503}
+}
 ```
