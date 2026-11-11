@@ -2,6 +2,8 @@
 
 [English](README.md) | 中文
 
+[论文（arXiv:2611.13503）](https://arxiv.org/abs/2611.13503) · [PDF](https://arxiv.org/pdf/2611.13503) · [Hugging Face 数据集](https://huggingface.co/datasets/FaiSonic/FaiSonic-MMD)
+
 以下命令均在仓库根目录运行。
 
 ## 1. 准备环境
